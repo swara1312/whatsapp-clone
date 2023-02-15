@@ -1,0 +1,91 @@
+.block{
+    padding:10px;
+    height:60px;
+    display: flex;
+}
+
+.personalpic img{
+    width:55px;
+    border-radius:50%;
+    margin-right:20px;
+    margin-left: 5px;
+}
+
+.info{
+    width:100%;
+    height:45px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(223, 222, 222);
+}
+
+.name{
+    display:flex;
+    justify-content: space-between;
+}
+
+.person-name a{
+    text-decoration: none;
+}
+
+.person-name{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.time{
+    font-size: 13px;
+}
+
+.chats{
+    margin-top:123px;
+    overflow-y: scroll;
+}
+
+.message, .time{
+    color: grey;
+}
+
+.message{
+    font-size: 15px;
+    font-stretch: expanded;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message p{
+    margin:0;
+    margin-top: 5px;
+}
+
+.message b{
+    background-color: #0fd755;
+    padding-top: 1px;
+    padding-bottom: 2px;
+    color:white;
+    min-width:20px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.message.unread{
+    color:black;
+    font-weight: 500;
+}
+
+.person-name.unread{
+    font-weight: 500;
+}
+
+.time.unread{
+    color:#0fd755;
+}
+
+#selected-block{
+    background-color: rgb(232, 228, 228);
+}
+

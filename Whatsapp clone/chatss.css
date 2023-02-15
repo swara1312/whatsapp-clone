@@ -1,0 +1,159 @@
+.nocontent{
+    background-color: #f0f2f5;
+    width:1170px;
+    left:520px;
+    margin-right:20px;
+    flex-shrink: 4;
+    display:flex;
+    overflow-y: hidden;
+    height: 743px;
+    background-image: url(wallpaper.jfif);
+}
+
+.header{
+    position: fixed;
+    width:1167px;
+    height:70px;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: space-between;
+}
+
+#profilePic{
+    margin-right:200px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-person-name{
+    margin-left: 15px;
+    font-size: 19px;;
+}
+
+.profilePic.chat img{
+    margin-right: 0;
+}
+
+.chat-section{
+    position:absolute;
+    left:520px;
+    top: 70px;
+    width:1150px;
+    height:650px;
+    overflow-y: scroll;
+    padding-right: 17px;
+    margin-right:0;
+}
+
+
+
+.msg{
+    position: relative;
+    display:flex;
+    width:100%;
+}
+
+.msg p{
+    position: relative;
+    right:0;
+    text-align: right;
+    max-width: 65%;
+    padding:10px;
+    background-color:#dcf8c6;
+    border-radius:10px;
+    font-size:15px;
+}
+
+.msg p::before{
+    content: '';
+    position: absolute;
+    width:20px;
+    height:20px;
+}
+
+.msg p span{
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.msg.my-msg{
+    justify-content: flex-end;
+}
+
+.msg.frnd-msg{
+    justify-content: flex-start;
+    margin-left:10px;
+}
+
+.msg.frnd-msg p{
+    background-color: white;
+
+}
+
+.chat-input{
+    height:60px;
+    position:fixed;
+    left:520px;
+    top: 703px;
+    background-color:#f0f2f5;
+    width:1170px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#chatinput{
+    background-color: white;
+    height: 30px;
+    width:950px;
+}
+
+@media (max-width:1500px){
+    .nocontent{
+        margin-right: 0;
+        position:fixed;
+        left:500px;
+        height:777px;
+    }
+
+    .chat-section{
+        top: 60px;
+        left: 7px;
+        width:100%auto;
+       }
+
+    .chat-input{
+        left:500px;
+    }
+}
+
+@media (max-width:1000px){
+    .nocontent{
+        width: 1120px;
+        left:381px;
+    }
+
+    .chat-section{
+        left:7px;
+        top: 60px;
+        width:445px;
+        height:690px;
+    }
+    
+    .header{
+        width:auto;
+    }
+
+    .chat-input{
+        top:725px;
+        left:380px;
+        justify-content: flex-start;
+    }
+
+    #chatinput{
+        width:290px;
+    }
+
+}
